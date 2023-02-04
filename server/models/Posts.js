@@ -2,17 +2,17 @@ module.exports = (sequelize, DataTypes) => {
   const Posts = sequelize.define("Posts", {
     title: {
       type: DataTypes.STRING,
-      allowNul: false,
+      allowNull: false,
     },
-    body: {
+    text: {
       type: DataTypes.STRING,
-      allowNul: false,
+      allowNull: false,
     },
     username: {
       type: DataTypes.STRING,
-      allowNul: false,
+      allowNull: false,
     },
-  })
+  });
 
-  return Posts
-}
+  return Posts;
+};
